@@ -12,12 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class GalleryActivity extends AppCompatActivity {
 
     int[] images = {
-            android.R.drawable.ic_menu_camera,
-            android.R.drawable.ic_menu_gallery,
-            android.R.drawable.ic_menu_call,
-            android.R.drawable.ic_menu_manage,
-            android.R.drawable.ic_menu_share,
-            android.R.drawable.ic_menu_send
+            R.drawable.img,
+            R.drawable.img_1,
+            R.drawable.img_2
     };
 
     @Override
