@@ -1,0 +1,24 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="10dp"
+    android:stretchColumns="1"> <TextView android:text="File Menu" android:textColor="#FF9800" android:padding="10dp"/>
+
+    <TableRow android:padding="5dp">
+        <TextView android:text="Open..." android:textColor="#FFF" />
+        <TextView android:text="Ctrl-O" android:textColor="#AAA" android:gravity="end" />
+    </TableRow>
+
+    <View android:layout_height="1dp" android:background="#444" />
+
+    <TableRow android:padding="5dp">
+        <TextView android:text="Save As..." android:textColor="#FFF" />
+        <TextView android:text="Ctrl-Shift-S" android:textColor="#AAA" android:gravity="end" />
+    </TableRow>
+
+    <TableRow android:padding="5dp">
+        <TextView android:text="Export..." android:textColor="#FFF" />
+        <TextView android:text="Ctrl-E" android:textColor="#AAA" android:gravity="end" />
+    </TableRow>
+</TableLayout>
