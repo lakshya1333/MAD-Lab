@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main Vertical Layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <!-- Top Horizontal Color Blocks -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <!-- RED -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:text="red"
+            android:textColor="#FFFFFF"
+            android:gravity="top|center"
+            android:padding="5dp"/>
+
+        <!-- GREEN -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FF00"
+            android:text="green"
+            android:textColor="#FFFFFF"
+            android:gravity="top|center"
+            android:padding="5dp"/>
+
+        <!-- BLUE -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0000FF"
+            android:text="blue"
+            android:textColor="#FFFFFF"
+            android:gravity="top|center"
+            android:padding="5dp"/>
+
+        <!-- YELLOW -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#CCCC00"
+            android:text="yellow"
+            android:textColor="#FFFFFF"
+            android:gravity="top|center"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <!-- Rows Below -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="row one"
+        android:textSize="28sp"
+        android:textColor="#AAAAAA"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="row two"
+        android:textSize="28sp"
+        android:textColor="#AAAAAA"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="row three"
+        android:textSize="28sp"
+        android:textColor="#AAAAAA"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="row four"
+        android:textSize="28sp"
+        android:textColor="#AAAAAA"
+        android:padding="10dp"/>
+
+</LinearLayout>

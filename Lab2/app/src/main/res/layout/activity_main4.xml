@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL Visitor App"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#222"
+        android:paddingBottom="20dp"/>
+
+    <!-- URL Input -->
+    <EditText
+        android:id="@+id/urlInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter URL (example: google.com)"
+        android:inputType="textUri"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:background="@android:drawable/edit_text"/>
+
+    <!-- Visit Button -->
+    <Button
+        android:id="@+id/visitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visit Website"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"/>
+
+</LinearLayout>

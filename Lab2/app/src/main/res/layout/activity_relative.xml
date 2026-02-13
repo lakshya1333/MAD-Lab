@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:padding="15dp">
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/typeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type here:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <!-- Input Box -->
+    <EditText
+        android:id="@+id/editBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typeText"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:padding="10dp"/>
+
+    <!-- OK Button -->
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_below="@id/editBox"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@id/editBox"
+        android:layout_toLeftOf="@id/okBtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
