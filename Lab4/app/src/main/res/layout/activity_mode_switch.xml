@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F6F6F6">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📶 Mode Switch"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="25dp" />
+
+    <!-- Card Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:elevation="6dp">
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Network Mode:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#444"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Toggle Button -->
+        <ToggleButton
+            android:id="@+id/toggleMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOn="Wi-Fi Enabled"
+            android:textOff="Mobile Data Enabled"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- Change Mode Button -->
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply Mode Change"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:padding="14dp"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:elevation="6dp" />
+
+</LinearLayout>

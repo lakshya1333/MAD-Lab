@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🍽 Food Order App"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="6dp">
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Items:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#444"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Pizza -->
+            <CheckBox
+                android:id="@+id/cbPizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pizza   ₹100"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:buttonTint="#FF5722" />
+
+            <!-- Burger -->
+            <CheckBox
+                android:id="@+id/cbBurger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Burger   ₹60"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:buttonTint="#FF5722" />
+
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Order"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:padding="14dp"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:elevation="6dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
