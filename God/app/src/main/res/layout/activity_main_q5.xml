@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#81D4FA">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_q5"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#7E57C2"
+        app:title="STUDENT CAMPUS APP"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Stay"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <Spinner
+            android:id="@+id/spinnerStay_q5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="#7E57C2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <CheckBox
+            android:id="@+id/cbCRA_q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CRA"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cbOE_q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OE"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cbLab_q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAB"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cbMess_q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MESS SUBSCRIPTION"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="16sp" />
+        <RadioGroup
+            android:id="@+id/rgGender_q5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp">
+            <RadioButton android:id="@+id/rbM_q5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="M" />
+            <RadioButton android:id="@+id/rbF_q5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F" />
+            <RadioButton android:id="@+id/rbOther_q5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Other" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnOk_q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:backgroundTint="#7E57C2"
+            android:layout_marginEnd="16dp" />
+        <Button
+            android:id="@+id/btnClear_q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            android:backgroundTint="#7E57C2" />
+    </LinearLayout>
+
+</LinearLayout>

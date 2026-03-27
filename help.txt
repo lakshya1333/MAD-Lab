@@ -1,0 +1,194 @@
+q1 => First Screen
+- text box to take input a number as input
+- radio buttons to choose prime or perfect square checker
+- button to go to next page
+Second screen 
+- Text box as input and display number of vowels and consonants 
+- Buttons to go to next page and previous page
+Third Screen
+- Book review form
+- snackbar
+- listview for rating
+
+
+q2 => Chekbox aur quantity ka tha, ki item ko chekbox aur quantity set karke next page me display karna hai, aur default sirf checkbox kiya toh ek hi quantity aayega, aur next page me current date+10 days dikhega
+
+q3 =>  5 activities the
+Activities 3 and 4 mei inputs lekar 5 mei summary nikalna tha
+ Activity 1 mei 2 buttons honge, 1 will lead to activity 2, the other to activity 3
+ Activity 2 mei menu options ka kuchh dekhna tha aur table component mei dummy values daalne the
+
+
+q4 => [11:08 pm, 26/3/2026] Dhruv CCE: Date picker (constraint cant pick yesterdays date and can pick maximum 20 days from today
+[11:08 pm, 26/3/2026] Dhruv CCE: Select north south east west is a spinner
+[11:08 pm, 26/3/2026] Dhruv CCE: Book slot can only be pressed if toggle button (just below date picker) is turned ON
+[11:08 pm, 26/3/2026] Dhruv CCE: When selecting north south east west after selecting a popup will show to ask to confirm your choice
+[11:08 pm, 26/3/2026] Dhruv CCE: Top right mai three buttons wala menu hai
+[11:08 pm, 26/3/2026] Dhruv CCE: Refresh - refresh everything selected
+
+q5 => if select on cqampus the mess checkbox should automatically get ticked if someone selcts OE he cant select CRA vice versa in second activity in date select constartoin date should be greater than todays date and summary shown in las
+
+
+
+Lab 4 => 🚀 Q1 – Test App (Button + ToggleButton + Custom Toast)
+
+Topics used:
+
+Button
+ToggleButton
+onClickListener
+Custom Toast (with custom layout) ⭐
+ImageView (inside Toast)
+Layout XML (custom toast layout)
+🤖 Q2 – Android Versions Buttons
+
+Topics used:
+
+Multiple Buttons
+onClickListener
+Toast
+Drawable resources (icons/images)
+String mapping (button → version name)
+📶 Q3 – Wi-Fi / Mobile Data Toggle
+
+Topics used:
+
+ToggleButton
+Button (Change Mode)
+ImageView (dynamic image change)
+Toast
+onClickListener
+Conditional logic (if-else based on toggle state)
+🍔 Q4 – Food Ordering App
+
+Topics used:
+
+CheckBox ⭐
+Button (Submit)
+onClickListener
+Intent (next activity)
+Data passing via Intent
+TextView (display order + cost)
+Calculation logic (total cost)
+Disable UI after submit (setEnabled(false)) ⭐
+Form handling
+🧠 QUICK SUMMARY
+Q1 → Custom Toast + Toggle
+Q2 → Buttons + Toast + Images
+Q3 → Toggle + Image change + Logic
+Q4 → Checkbox + Intent + Calculation + Disable UI
+
+
+
+
+
+
+
+
+Lab 5 => 🚗 1. Vehicle Parking Registration
+
+Topics used:
+
+Spinner (vehicle type)
+EditText (vehicle no, RC no)
+Button (submit, confirm, edit)
+Intent (move to next screen)
+Toast (serial number)
+Basic form handling
+✈️ 2. Travel Ticket Booking
+
+Topics used:
+
+Spinner (source, destination)
+Date Picker (travel date)
+Toggle Button (one-way / round trip)
+Button (submit, reset)
+Intent (next screen display)
+Reset logic (clear fields + current date)
+🎬 3. Movie Ticket Booking
+
+Topics used:
+
+Spinner (movie, theatre)
+Date Picker (show date)
+Time Picker (show time)
+Toggle Button (standard / premium)
+Button (book, reset)
+Intent (display details)
+Input validation (check empty fields)
+Conditional logic (enable button after 12 PM)
+Basic data display (available seats)
+
+
+
+
+
+Lab 6 => Options Menu (menu.xml)
+Menu Items (text + icons)
+Toolbar / Action Bar
+showAsAction (for icons in menu)
+onCreateOptionsMenu()
+onOptionsItemSelected()
+Intent (for navigation between screens)
+Activity navigation / multiple activities
+ListView or RecyclerView (to display lists)
+ArrayAdapter / Custom Adapter
+ImageView (for trainer photos, icons)
+TextView (for names, details, pricing)
+Drawable resources (images/icons)
+Layouts (LinearLayout / ConstraintLayout)
+Static data display (lists like workout plans, membership details)
+
+
+
+
+Lab 7 => 🚀 Q1 – Installed Apps List
+
+Topics used:
+
+PackageManager (get installed apps) ⭐
+ListView / RecyclerView
+Custom Adapter
+Long Press (setOnItemLongClickListener)
+Context Menu / Popup Menu
+Intent (open app, app details, uninstall)
+ACTION_DELETE (uninstall intent)
+ACTION_APPLICATION_DETAILS_SETTINGS
+AlertDialog (confirmation before uninstall)
+Permissions handling (check app permissions)
+App info (version, storage)
+Activity navigation (details screen)
+Data passing via Intent
+🖼️ Q2 – Image Menu with Submenu
+
+Topics used:
+
+ImageView (icon click)
+Popup Menu / Submenu
+Menu XML
+onClickListener
+onMenuItemClick
+Drawable resources (images)
+Toast (show content)
+Dynamic image display (ImageView update)
+📄 Q3 – Digital Transformation View with Filters
+
+Topics used:
+
+TextView (large content display)
+Options Menu / Submenu
+Search functionality (string matching)
+EditText (keyword input)
+Highlighting text (SpannableString) ⭐
+Sorting logic (alphabetical / relevance)
+String manipulation
+Dialog / AlertDialog (input from user)
+Menu handling (onOptionsItemSelected)
+🧠 QUICK SUMMARY
+Q1 → Apps + PackageManager + Long Press + Intents
+Q2 → Image + Popup Menu + Toast
+Q3 → Text + Search + Highlight + Sort
+
+
+
+
