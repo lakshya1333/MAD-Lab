@@ -1,5 +1,6 @@
 package com.example.lab5;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +9,7 @@ import java.util.Random;
 
 public class MovieSummaryActivity extends AppCompatActivity {
 
-    TextView tv;
+    TextView tv, tvHistory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +17,7 @@ public class MovieSummaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_movie_summary);
 
         tv = findViewById(R.id.tvMovieDetails);
+        tvHistory = findViewById(R.id.tvBookingHistory);
 
         String movie = getIntent().getStringExtra("movie");
         String theatre = getIntent().getStringExtra("theatre");
@@ -35,5 +37,10 @@ public class MovieSummaryActivity extends AppCompatActivity {
                 "\nAvailable Seats: " + seats;
 
         tv.setText(result);
+
+        // Load History from SharedPreferences
+        SharedPreferences pref = getSharedPreferences("MovieHistory", MODE_PRIVATE);
+        String history = pref.getString("bookings", "No history available");
+        tvHistory.setText(history);
     }
 }

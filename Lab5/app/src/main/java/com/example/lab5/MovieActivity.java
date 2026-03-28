@@ -1,6 +1,7 @@
 package com.example.lab5;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
@@ -77,17 +78,19 @@ public class MovieActivity extends AppCompatActivity {
 
             String ticketType = toggle.isChecked() ? "Premium" : "Standard";
 
-            // Validation
-            if (m.equals("") || t.equals("")) {
-                Toast.makeText(this, "Select all fields!", Toast.LENGTH_SHORT).show();
-                return;
-            }
+            String bookingDetails = m + " | " + t + " | " + day + "/" + month + "/" + year + " | " + hour + ":" + String.format("%02d", min) + " | " + ticketType;
+
+            // Save to History
+            SharedPreferences pref = getSharedPreferences("MovieHistory", MODE_PRIVATE);
+            String history = pref.getString("bookings", "");
+            history = bookingDetails + "\n" + history;
+            pref.edit().putString("bookings", history).apply();
 
             Intent intent = new Intent(this, MovieSummaryActivity.class);
             intent.putExtra("movie", m);
             intent.putExtra("theatre", t);
             intent.putExtra("date", day + "/" + month + "/" + year);
-            intent.putExtra("time", hour + ":" + min);
+            intent.putExtra("time", hour + ":" + String.format("%02d", min));
             intent.putExtra("type", ticketType);
 
             startActivity(intent);
@@ -95,17 +98,10 @@ public class MovieActivity extends AppCompatActivity {
 
         // 🔄 Reset
         reset.setOnClickListener(v -> {
-
             movie.setSelection(0);
             theatre.setSelection(0);
-
             Calendar c = Calendar.getInstance();
-            datePicker.updateDate(
-                    c.get(Calendar.YEAR),
-                    c.get(Calendar.MONTH),
-                    c.get(Calendar.DAY_OF_MONTH)
-            );
-
+            datePicker.updateDate(c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH));
             toggle.setChecked(false);
             book.setEnabled(true);
         });
