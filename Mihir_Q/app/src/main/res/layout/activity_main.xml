@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Student 1 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Student 1" android:textStyle="bold" />
+        <EditText android:id="@+id/etName1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Name" />
+        <EditText android:id="@+id/etS1_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Subject 1 Marks" android:inputType="number" />
+        <EditText android:id="@+id/etS2_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Subject 2 Marks" android:inputType="number" />
+        <EditText android:id="@+id/etS3_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Subject 3 Marks" android:inputType="number" />
+
+        <!-- Student 2 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Student 2" android:textStyle="bold" android:layout_marginTop="16dp" />
+        <EditText android:id="@+id/etName2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Name" />
+        <EditText android:id="@+id/etS1_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Subject 1 Marks" android:inputType="number" />
+        <EditText android:id="@+id/etS2_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Subject 2 Marks" android:inputType="number" />
+        <EditText android:id="@+id/etS3_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Subject 3 Marks" android:inputType="number" />
+
+        <!-- Student 3 -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Student 3" android:textStyle="bold" android:layout_marginTop="16dp" />
+        <EditText android:id="@+id/etName3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Name" />
+        <EditText android:id="@+id/etS1_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Subject 1 Marks" android:inputType="number" />
+        <EditText android:id="@+id/etS2_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Subject 2 Marks" android:inputType="number" />
+        <EditText android:id="@+id/etS3_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Subject 3 Marks" android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+            <Button android:id="@+id/btnPopup" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Popup" />
+            <Button android:id="@+id/btnNext" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Next" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
