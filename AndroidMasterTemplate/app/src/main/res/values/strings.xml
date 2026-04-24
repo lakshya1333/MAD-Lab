@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/strings.xml -->
+<!-- TODO: EXAM_MODIFY — Change app_name and any other string resources -->
+<resources>
+    <string name="app_name">Master Template</string>  <!-- TODO: EXAM_MODIFY -->
+    <string name="app_description">Exam Ready Android App</string>
+    <string name="btn_next">Next →</string>
+    <string name="btn_prev">← Back</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_logout">Logout</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:id="@+id/tvHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ACTIVITY 2" android:textSize="22sp" android:gravity="center" android:layout_marginBottom="10dp" android:textStyle="bold" />
+        <EditText android:id="@+id/etID" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter ID" android:inputType="number" />
+        <EditText android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter Name" />
+        <EditText android:id="@+id/etValue1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter Value 1" />
+        <CheckBox android:id="@+id/cbSample" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Accept Terms" />
+        <Switch android:id="@+id/switchSample" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Status (On/Off)" />
+        <RadioGroup android:id="@+id/rgSample" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/rb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Option A" />
+            <RadioButton android:id="@+id/rb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Option B" />
+        </RadioGroup>
+        <Spinner android:id="@+id/spinnerSample" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" />
+        <Button android:id="@+id/btnDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Select Date" />
+        <Button android:id="@+id/btnTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Select Time" />
+        <TextView android:id="@+id/tvDisplay" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Selected Date/Time" android:padding="5dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnInsert" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="INSERT" />
+            <Button android:id="@+id/btnUpdate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="UPDATE" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnDelete" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="DELETE" />
+            <Button android:id="@+id/btnView" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="VIEW" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnReset" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="RESET" />
+            <Button android:id="@+id/btnPopup" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="POPUP" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp">
+            <Button android:id="@+id/btnBack" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="BACK" />
+            <Button android:id="@+id/btnNext" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="NEXT" />
+        </LinearLayout>
+        <ListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="10dp" />
+    </LinearLayout>
+</ScrollView>
