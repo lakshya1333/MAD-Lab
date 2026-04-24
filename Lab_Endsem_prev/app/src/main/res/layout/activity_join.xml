@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Student to Event"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etSearchRoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Student Roll No"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnSearchStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Student" />
+
+    <TextView
+        android:id="@+id/tvStudentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Student Selected"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="#f0f0f0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Event:"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Score"
+        android:inputType="number"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnRegisterToEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register for Event"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnGoToSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Summary Page"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

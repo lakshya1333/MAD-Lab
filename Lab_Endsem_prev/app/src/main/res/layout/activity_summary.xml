@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvSummaryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Summary"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvStudentNameDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student: "
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvSummaryContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Loading summary..."
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="#e0e0e0"/>
+
+    <TextView
+        android:id="@+id/tvTotalScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Score: 0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnBackToMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Registration"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
