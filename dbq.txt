@@ -1,0 +1,28 @@
+Mihirq => one activity in whcih need to add 3 student name and there marks of every subject there will be two button one is pop up button and otehr button is next in pop up there were two one is reset other is save to database in last activity previe button should be there of all the 3 studnent also a delete button near every student name to delete them and back button in the end
+
+
+
+Doctor_db => 2 screen are there in first screen date picker is there,time picker,patient name,selct doctor through dropdown, consultation type aand there are three button one is confirm appointment , second is view all appointment and last is delete appointment . In the second screen summary is there 
+
+FoodOrder_DB => create 2 pages in first page take checkbox of item with price and select quantity there is a button submit order and in the last page summary is there to delete the order
+
+(Imp)Hospital_DB => Select name male,female  , toggle button pick select doctor type from dropdown having 3 button Clear all,Proceed , Edit Data in proceed it is context menu if u long press u get Generate Patient ID,Save data to databse , Next(Summary) and Delete patient record is there 
+
+
+Ticket_DB => Enter name,Number of ticket, ticket type(dropdown) slect date,seat preference this was in first activity ,  In second activity two button are there update/edit and other is submit
+
+
+Rishiq => On first screen, A datepicker should be there to pick a date and after choosing the date, it should populate ie. display the data . 
+In every order id a checkbox is there, if selected and clicked on edit, a screen opens with the two items of that order listed and only their quantities can be edited. Submitting the updated quantities should change the db , show a token and display the updated data.
+A menu is there with Populate option that just displays the data (ie. first screen)
+
+
+
+Batch1q => page 1: student registration / login (database)
+
+page 2: event registration (database), with components like discrete seek bar and all
+
+page 3: student registration into events (need to join the student and the event tables in sqlite and store shit), ability to search for students, and filter events aisa kuchh toh tha
+
+page 4: summary page for the student, ki which events they took part in, how many points in each event, if the total score is greater than 50 (again join karke kuchh toh complex sql query karni thi), kuchh toh toast message daalna hai, varna kuchh aur toast message daalna hai
+
